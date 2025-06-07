@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import TabBox from "./components/TabBox";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-dark">
+    <div className="min-h-screen bg-dark flex flex-col justify-between">
       <Header />
       <div className="p-8">
         <main className="max-w-4xl mx-auto flex flex-col items-center">
@@ -25,6 +26,7 @@ export default function Home() {
           <TabBox />
         </main>
       </div>
+      <Footer />
     </div>
   );
 }
